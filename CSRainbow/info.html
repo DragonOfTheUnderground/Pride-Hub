@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<!-- Mirrored from csrainbow.neocities.org/info by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Feb 2024 22:10:31 GMT -->
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
+    <meta lang="en"/>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="database.js"></script>
+    <title>Common Sense Rainbow - Site Info</title>
+    <style>
+      /* Style the button that is used to open and close the collapsible content */
+      .collapsible {
+        background-color: #0099ff;
+        color: #ff66ff;
+        cursor: pointer;
+        padding: 18px;
+        width: 20%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 22px;
+      }
+      
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .collapsible:hover {
+        background-color: #0066ff;
+      }
+      
+      /* Style the collapsible content. Note: hidden by default */
+      .collapse {
+        padding: 0 18px;
+        margin: 0 180px;
+        display: none;
+        overflow: hidden;
+        background-color: #ff66ff;
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="index.html"><p style="font-size: 32px; margin-bottom: 5px;"><b>Common Sense Rainbow</b></p></a>
+        <h4 id="message" style="margin: 5px;">love is love</h4>
+        <script>
+            // list of messages when site loads
+            let messages = Array(
+                "CRAZY queerphobs get destroyed with FACTS and LOGIC",
+                "be gay do crime",
+                "some people are LGBT+ get over it",
+                "theirs no LGB without the T",
+                "trans rights are human rights",
+                "love is love",
+                "nobody is born illegal",
+                "putting the homo in homo sapien"
+            )
+            // get random message and add it to website
+            let message = messages[Math.floor(Math.random()*messages.length)];
+            document.getElementById("message").innerHTML = message;
+        </script>
+    </div>
+    <br/>
+    <div class="box">
+        <h2>
+            <a href="index.html">Home</a>
+            ―
+            <a href="articles.html">Articles</a>
+            ―
+            <a href="resources.html">Resources</a>
+            ―
+            <a href="index.html">Info</a>
+        </h2>
+    </div>
+    <br/>
+    <div class="box">
+        <h2>About</h2>
+        <h3>
+            Common Sense Rainbow is a site dedicated to debunking anti LGBT+ arguments as well as providing educational information on LGBT+ topics. We have cataloged many hateful arguments and
+            myths and refuted them using logic and research. We also write articles on LGBT+ topics and link to useful LGBT+ resources. This website is good for anyone who wants to
+            educate themselves, anyone who wants to better fight bigots, people on the fence about supporting the LGBT+ movement, or LGBT+
+            people who just want to read. Please share this site to maximize its impact.
+        </h3>
+    </div>
+    <br/>
+    <div class="box">
+        <h2>Why</h2>
+        <h3>
+            This site was established to combat hate. If you have been following the news there has been
+            a rise in anti-LGBT+ rhetoric, we hope to debunk a lot of the transphobic and homophobic arguments being used today.
+            This site was also made to give LGBT+ people easy resources to fight bigots. Our site also helps non-LGBT+ and LGBT+ people alike learn more about LGBT+ issues and topics.
+        </h3>
+    </div>
+    <br/>
+    <div class="box">
+        <h3>Contact: csrainbow@proton.me</h3>
+    </div>
+    <br/>
+    <div class="box">
+        <h3>BTC: bc1qy8h7r5k6dwdp6hy8qzum5u7wztfezre4p20z9p</h3>
+    </div>
+    <br/>
+    <div class="box">
+      <a href="index.html"><img src="media/images/button.gif"></a>
+    </div>
+    <br/>
+    <div class="box">
+      <h2>Errors</h2>
+      <h3>Any large or important factual errors will be now be reported under individual articles.</h3><br>
+      <button type="button" class="collapsible">Click me for past errors that were reported here</button>
+      <div class="collapse">
+        <h4>Fixxed the don't say gay bill article by removing an error about the bill's scope</h4>
+        <h4>Deleted "The Real Reasons More People Are Identifying As LGBT+" <a href="media/stuff/increasearchive.txt">(archive)</a> because it had some factual errors and did not cover a lot of important nuances about sexuality. A better article has replaced it.</h4>
+        <h4>Fixed the dates on the July 2022 LGBT+ News Recap because they were all messed up.</h4>
+        <h4>The "People choose their sexuality" argument on the main page said sexuality was only caused by genes, while genes probably play a big role they are not the only factor.</h4>
+        <h4>Made changes in "The Factors Increasing LGBT+ Identification" so the article better represented sexual fluidity and enviromental factors.</h4>
+      </div>
+    </div>
+    <br/>
+    <div class="box">
+        <h3>This website is hosted by <a href="https://neocities.org/">Neocities</a></h3>
+    </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+</body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
+    <meta lang="en"/>
+    <link rel="stylesheet" href="/main.css">
+    <script type="text/javascript" src="database.js"></script>
+    <title>Common Sense Rainbow - 404</title>
+</head>
+<body>
+    <div class="box">
+        <a href="/"><p style="font-size: 32px; margin-bottom: 5px;"><b>Common Sense Rainbow</b></p></a>
+        <h4 id="message" style="margin: 5px;">love is love</h4>
+        <script>
+            // list of messages when site loads
+            let messages = Array(
+                "CRAZY queerphobs get destroyed with FACTS and LOGIC",
+                "be gay do crime",
+                "some people are LGBT+ get over it",
+                "theirs no LGB without the T",
+                "trans rights are human rights",
+                "love is love",
+                "nobody is born illegal",
+                "putting the homo in homo sapien"
+            )
+            // get random message and add it to website
+            let message = messages[Math.floor(Math.random()*messages.length)];
+            document.getElementById("message").innerHTML = message;
+        </script>
+    </div>
+    <br/>
+    <div class="box">
+        <h2>
+            <a href="/">Home</a>
+            ―
+            <a href="/articles.html">Articles</a>
+            ―
+            <a href="/resources.html">Resources</a>
+            ―
+            <a href="/">Info</a>
+        </h2>
+    </div>
+    <br/>
+    <div class="box">
+        <h2>Page Not Found :(</h2>
+        <h3><a href="/">Back to main page</a></h3>
+        <img width="35%" src="/media/images/progressprideflag.png" style="border-radius: 12px;">
+        <img width="37%" src="/media/images/transflag.png" style="border-radius: 12px;">
+    </div>
+</body>

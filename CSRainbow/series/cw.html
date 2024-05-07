@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- Mirrored from csrainbow.neocities.org/series/cw by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Feb 2024 22:10:40 GMT -->
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"/>
+    <meta lang="en"/>
+    <link rel="stylesheet" href="../main.css">
+    <title>Common Sense Rainbow - Articles</title>
+    <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+          }
+      }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <a href="../index.html"><p style="font-size: 32px; margin-bottom: 5px;"><b>Common Sense Rainbow</b></p></a>
+        <h4 id="message" style="margin: 5px;">love is love</h4>
+        <script>
+            // list of messages when site loads
+            let messages = Array(
+                "CRAZY queerphobs get destroyed with FACTS and LOGIC",
+                "be gay do crime",
+                "some people are LGBT+ get over it",
+                "theirs no LGB without the T",
+                "trans rights are human rights",
+                "love is love",
+                "nobody is born illegal",
+                "putting the homo in homo sapien"
+            )
+            // get random message and add it to website
+            let message = messages[Math.floor(Math.random()*messages.length)];
+            document.getElementById("message").innerHTML = message;
+        </script>
+    </div>
+    <br/>
+    <div class="box">
+        <h2>
+            <a href="../index.html">Home</a>
+            ―
+            <a href="../articles.html">Articles</a>
+            ―
+            <a href="../resources.html">Resources</a>
+            ―
+            <a href="../info.html">Info</a>
+        </h2>
+    </div>
+    <br/>
+    <div class="box">
+        <h2>LGBT+ Case Watch</h2>
+        <h3>
+            A series that covers current important cases affecting the LGBT+ community.
+        </h3>
+    </div>
+    <br/>
+    <div class="box">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for articles" title="Type in a name">
+    </div>
+    
+    <ul id="myUL" style="padding-left:0;">
+    
+      <li><div class="box" style="margin-bottom:20px;">
+          <a href="../articles/cw/303c.html" style="margin-bottom:20px;">
+                <h2>LGBT+ Case Watch: LGBT+ Rights Collide With The First Amendment</h2>
+                <h3>
+                  A case that could have a big impact on LGBT+ rights and nondiscrimination laws has reached the Supreme Court. The question at hand is whether a nondiscrimination law that protects LGBT+ people is unconstitutional if the service being provided counts speech.
+                </h3>
+            </a>
+      </div></li>
+      
+      <li><div class="box" style="margin-bottom:20px;">
+          <a href="../articles/cw/cw1.html" style="margin-bottom:20px;">
+                <h2>LGBT+ Case Watch: Defending Life-Saving Health Care In Alabama</h2>
+                <h3>
+                  In April, Alabama governor Kay Ivey (R) signed multiple anti-LGBT+ bills into law. These laws did everything from curriculum censorship to banning transgender students from using the correct bathrooms, but one of these laws was of particular interest to LGBT+ activists, it banned best practice gender-affirming care for minors and even included criminal penalties. Several LGBT+ and civil rights groups quickly filed a lawsuit which will be the topic of this article.
+                </h3>
+            </a>
+      </div></li>
+      
+    </ul>
+</body>

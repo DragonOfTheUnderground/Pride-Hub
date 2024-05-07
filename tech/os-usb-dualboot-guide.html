@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><body>
+<p style="text-align: left;margin:0px;padding: 3px;"><small><a href="index.html">Back</a></small></p>
+<h1>Guide To Dual-Booting, USB Boots, And Changing Your OS</h1>
+<h5>By Firethorn</h5>
+<p><small>I am not responsible for damages done to any device, whether in hardware or software.</small></p>
+<hr>
+<ol>
+  <li>
+    <b>Preparation</b>
+    <p>Make backups of any important files before attemping anything in this guide. In addition, you will need at least one USB (empty or one you're okay with deleting everything from, at least 8 GB too) and an ISO file for the OS of your choice.</p>
+    <p>You may shuffle files around as needed to gain space. ISO downloads for a few Linux OSs will be included at the bottom of the page.</p>
+  </li>
+  <li>
+    <b>Making A Bootable USB</b>
+    <p>Click <a href="https://learn.microsoft.com/en-us/windows-server-essentials/install/create-a-bootable-usb-flash-drive" target="_blank">here</a> for the Windows tutorial.</p>
+    <p>Click <a href="https://machow2.com/create-bootable-usb-drive-mac/" target="_blank">here</a> for the MacOS tutorial.</p>
+    <p>Click <a href="https://www.makeuseof.com/create-bootable-usb-drive-with-etcher-linux/" target="_blank">here</a> for the Linux tutorial.</p>
+    <p>I have not tested it, but the <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi Imager</a> may also be able to create bootable USBs.</p>
+  </li>
+  <li>
+    <b>The Boot Menu</b>
+    <p>If this page is loaded on the target computer, transfer it to another device before proceeding.</p>
+    <p>Completely turn off your computer and plug in the USB.</p>
+    <p>When rebooting, look for a message (often in the bottom left of the screen) telling you to press a key for a menu. If there's an option to go directly to the boot menu, press that key. Otherwise, press the key for the the BIOS menu and navigate to the boot menu from there.</p>
+    <p>With some inferences and guesswork, figure out what option boots to your USB. It's okay if you have to reboot a few times to get it.</p>
+    <p>*If you're on a Chromebook, this is very different. Follow this <a href="https://www.wikihow.com/Enable-USB-Booting-on-Chromebook" target="_blank">tutorial</a> instead.</p>
+    <p>*On a Mac, you have to hold either Option or Power, depending on your device.</p>
+  </li>
+  <li>
+    <b>Installation</b>
+    <p>If you intend to boot only from a USB, then congratulations! Whatever you did on your last boot is what you need to do to run your OS of choice. You may unplug the USB after shutting down and, if you wish, change the boot order in your BIOS to use a USB boot if available. Otherwise, continue reading.</p>
+    <p>Most ISOs either prompt you to install immediately or have an installation program on the desktop. If you wish to dual-boot, make sure to tell it to only use part of your hard drive (Your system will ask which OS to use on startup). If this option is not available, return to your main OS and <a href="https://www.makeuseof.com/how-to-partition-hard-drive/" target="_blank">partition your hard drive</a>. Backups are crucial here.</p>
+    <p>If you do not wish to dual-boot and instead want to completely change your OS, simply tell the program to do that instead. If you choose this, you entire hard drive will be overwritten.</p>
+  </li>
+</ol>
+<hr>
+<b>Linux OS List</b>
+<ul>
+  <li><a href="https://www.linuxmint.com/download.php" target="_blank">Linux Mint</a> - Popular, simple, and functional. Similar to Windows.</li>
+  <li><a href="https://mxlinux.org/download-links/" target="_blank">MX Linux</a> - Similar to Windows.</li>
+  <li><a href="https://ubuntu.com/download/desktop" target="_blank">Ubuntu</a> - A very popular Linux OS with custom themes, long-term support, and a huge community.</li>
+  <li><a href="https://xubuntu.org/download/" target="_blank">Xubuntu</a> - Like Ubuntu, but the initial setup is lighter on disk space.</li>
+  <li><a href="https://www.kali.org/get-kali/#kali-installer-images" target="_blank">Kali Linux</a> - Commonly used by hackers and pen-testers.</li>
+  <li><a href="https://tails.net/install/download-iso/index.en.html" target="_blank">Tails OS</a> - Designed to be booted from a USB so you can run Tor without leaving a trace on the hard drive.</li>
+  <li><a href="https://archlinux.org/download/" target="_blank">Arch Linux</a> - In-depth and DIY, has a user-owned repository. Very popular.</li>
+  <li><a href="https://www.debian.org/download" target="_blank">Debian Linux</a> - The oldest Linux distribution. Stable and dependable with great suppport.</li>
+  <li><a href="https://fedoraproject.org/workstation/download" target="_blank">Fedora</a> - Very popular.</li>
+  <li><a href="https://zorin.com/os/download/" target="_blank">Zorin OS</a> - Similar to Windows and MacOS. Easy to use.</li>
+  <li><a href="https://getsol.us/download/" target="_blank">Solus</a> - Plug-and-play, great for developers too.</li>
+</ul>
+<br><br>
+</body></html>

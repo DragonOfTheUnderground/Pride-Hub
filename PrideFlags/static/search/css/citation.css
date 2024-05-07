@@ -1,0 +1,38 @@
+ol { 
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 1.5em;
+}
+
+.flag-card-citation {
+    box-sizing: border-box;
+    position: relative;
+    outline: black solid 1px;
+    box-shadow: 2px 2px 5px 0px rgba(70,70,70,0.5);
+    background: white;
+    padding: 0.5em;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
